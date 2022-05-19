@@ -60,3 +60,13 @@ body {
         180px 1fr;
     }
 }
+
+@media screen and (max-width: 670px) {
+    body {
+        grid-template:
+        'header header' auto
+        'left-menu emails' 1fr 
+        'left-menu settings' 200px /
+        50px 1fr;
+    }
+}
