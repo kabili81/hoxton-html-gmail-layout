@@ -55,8 +55,8 @@ body {
     body {
         grid-template:
         'header header' auto
-        'left-menu emails' 1fr /
-        'settings settings' 200px/
+        'left-menu emails' 1fr 
+        'left-menu settings' 200px /
         180px 1fr;
     }
 }
