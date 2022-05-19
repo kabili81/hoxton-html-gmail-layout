@@ -37,3 +37,26 @@ body {
     grid-area: shortcuts;
     background-color: #00ffff40;
 }
+
+@media screen and (max-width: 740px) {
+    body {
+        grid-template:
+        'header header header header'auto
+        'left-menu emails settings shortcuts' 1fr /
+        180px 1fr 180px auto;
+    }
+
+    .shortcuts {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 670px) {
+    body {
+        grid-template:
+        'header header' auto
+        'left-menu emails' 1fr /
+        'settings settings' 200px/
+        180px 1fr;
+    }
+}
