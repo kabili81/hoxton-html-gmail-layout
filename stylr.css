@@ -11,31 +11,37 @@ body {
     'header header header header'auto
     'left-menu emails settings shortcuts' 1fr /
     180px 1fr 180px auto;
+    
 }
 
 .header {
+    padding: 1rem;
     grid-area: header;
-    background-color: #ff000040;
+    background-color: #ff000040; 
 }
 
 .left-menu {
+    padding: 1rem;
     grid-area: left-menu;
-    background-color: #00ff0040;
+    background-color: #00ff0040; 
 }
   
 .emails {
+    padding: 1rem;
     grid-area: emails;
-    background-color: #0000ff40;
+    background-color: #0000ff40; 
 }
 
 .settings {
+    padding: 1rem;
     grid-area: settings;
     background-color: #ff00ff40;
 }
 
 .shortcuts {
+    padding: 1rem;
     grid-area: shortcuts;
-    background-color: #00ffff40;
+    background-color: #00ffff40; 
 }
 
 @media screen and (max-width: 740px) {
