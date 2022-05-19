@@ -1,42 +1,39 @@
-** {
+* {
     margin: 0;
-  }
-  
-  .container {
-    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     height: 100vh;
-  
     display: grid;
-  
     grid-template:
-      "header header header" 50px
-      "left-menu main right-menu" 1fr
-      "footer footer footer" 50px /
-      200px 1fr 200px;
-  }
-  
-  .header {
+    'header header header header'auto
+    'left-menu emails settings shortcuts' 1fr /
+    180px 1fr 180px auto;
+}
+
+.header {
     grid-area: header;
-    background-color: #ffcc0070;
-  }
-  
-  .left-menu {
+    background-color: #ff000040;
+}
+
+.left-menu {
     grid-area: left-menu;
-    background-color: #ff000070;
-  }
+    background-color: #00ff0040;
+}
   
-  .main {
-    grid-area: main;
-    background-color: #00ff0070;
-  }
-  
-  .right-menu {
-    grid-area: right-menu;
-    background-color: #ff00ffda;
-  }
-  
-  .footer {
-    grid-area: footer;
-    background-color: #00aaff70;
-  }
-  
+.emails {
+    grid-area: emails;
+    background-color: #0000ff40;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: #ff00ff40;
+}
+
+.shortcuts {
+    grid-area: shortcuts;
+    background-color: #00ffff40;
+}
