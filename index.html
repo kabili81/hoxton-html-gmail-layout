@@ -6,31 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoxton-html-gmail-layout</title>
     <link rel="stylesheet" href="stylr.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
-            <div class="header">header</div>
-        <div class="left-menu">left manu</div>
-        <div class="emails">
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
-        <p>Email - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias accusantium ad! Blanditiis doloribus molestias atque aspernatur quia hic illum enim voluptates, nihil sint amet suscipit laborum, est nesciunt voluptate?</p>
+
+    <div class="header">
+        <div class="header__left-menu">
+          <button>
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+          <img
+            class="gmail-logo"
+            src="https://cdn.vox-cdn.com/thumbor/8fWz6qpiMYMsZhY4vrc9Vhl5yL8=/0x110:1320x770/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg"
+            alt="gmail logo"
+            width="30"
+          />
         </div>
-       
-        <div class="settings">settings</div>
-        <div class="shortcuts">shortcuts</div>
+        <div class="header__search">
+            <div class="header__search__search-icon search-side">
+              <span class="material-symbols-outlined">
+                search
+              </span>
+            </div>
+            <input
+              class="header__search__bar"
+              type="search"
+              placeholder="Search mail"
+            />
+            <div class="header__search__expand search-side">
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </div>
+          </div>
+          <div class="header__right-menu">
+            <button>
+              <span class="material-symbols-outlined">
+                help
+              </span>
+            </button>
+            <button>
+              <span class="material-symbols-outlined">
+                settings
+              </span>
+            </button>
+            <button>
+              <span class="material-symbols-outlined">
+                apps
+              </span>
+            </button>
+            <button class="header__right-menu__profile">
+              <div class="container">
+                <span class="name">Kabil</span>
+                <img
+                  src="https://scontent.fprn12-1.fna.fbcdn.net/v/t31.18172-8/11072924_10206727916855871_7580360997957280846_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=6N3IY8uMCzMAX_wQ7TS&_nc_ht=scontent.fprn12-1.fna&oh=00_AT-ZH8wG9zXVszcJOfLJfkrV85g5YsNaRUtcgec0PDQQTw&oe=62AB7EBB"
+                  alt=""
+                  width="25"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <aside class="left-menu">
+            <nav>
+                <menu>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Starred</a></li>
+                    <li><a href="#">Snoozed</a></li>
+                    <li><a href="#">Important</a></li>
+                    <li><a href="#">Sent</a></li>
+                    <li><a href="#">Drafts</a></li> 
+                </menu>
+            </nav>
+        </aside>
+        <main class="emails">
+            <h2>Emails</h2>
+
+            <section>
+                <h3>Read</h3>
+                <ul></ul>
+            </section>
+
+            <section>
+                <h3>Unread</h3>
+                <ul></ul>
+            </section>
+        </main>
+        <div class="settings"></div>
+        <menu class="shortcuts">
+            <li>Shortcut 1</li>
+            <li>Shortcut 2</li>
+            <li>Shortcut 3</li>
+            <li>Shortcut 4</li>
+        </menu>
 </body>
 </html>

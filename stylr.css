@@ -2,77 +2,150 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     height: 100vh;
     display: grid;
     grid-template:
-    'header header header header'auto
-    'left-menu emails settings shortcuts' 1fr /
-    180px 1fr 180px auto;
-    
-}
-
-.header {
-    padding: 1rem;
-    grid-area: header;
-    background-color: #ff000040; 
-}
-
-.left-menu {
-    padding: 1rem;
-    grid-area: left-menu;
-    background-color: #00ff0040; 
-}
+      'header header header header' auto
+      'left-menu emails settings shortcuts' 1fr /
+      180px 1fr 180px 50px;
+  }
   
-.emails {
-    padding: 1rem;
+  /* HEADER SECTION */
+  
+  .header {
+    grid-area: header;
+  
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  button {
+    background: none;
+    border: none;
+  }
+  
+  .header button span {
+    font-size: 1.2rem;
+    color: rgb(71, 71, 71);
+  }
+  
+  /* HEADER SECTION -- LEFT MENU */
+  
+  .header__left-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  /* HEADER SECTION -- SEARCH */
+  
+  .header__search {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+  
+  .search-side {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    color: rgb(142, 142, 142);
+  }
+  
+  .header__search__search-icon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .header__search__search-icon span {
+    font-size: 1.2rem;
+  }
+  
+  .header__search__bar {
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  /* 
+  .header__search__bar:focus {
+    outline: none;
+  } */
+  
+  .header__search__expand {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .header__search__expand span {
+    font-size: 1.2rem;
+  }
+  
+  /* HEADER SECTION -- RIGHT MENU */
+  
+  .header__right-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  
+  .header__right-menu__profile {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+  
+  .header__right-menu__profile .container {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 0.5rem;
+  }
+  
+  .header__right-menu__profile .name {
+    font-size: 0.8rem;
+  }
+  
+  .header__right-menu__profile img {
+    border-radius: 50%;
+  }
+  
+  /* LEFT MENU SECTION */
+  
+  .left-menu {
+    grid-area: left-menu;
+    background-color: #00ff0040;
+  }
+  
+  .gmail-logo {
+    width: 60px;
+  }
+  
+  /* EMAILS SECTION  */
+  
+  .emails {
     grid-area: emails;
-    background-color: #0000ff40; 
-}
-
-.settings {
-    padding: 1rem;
-    grid-area: settings;
     background-color: #ff00ff40;
-}
-
-.shortcuts {
-    padding: 1rem;
+  }
+  
+  /* SETTINGS SECTION  */
+  
+  .settings {
+    grid-area: settings;
+    background-color: #0000ff40;
+  }
+  
+  /* SHORTCUTS SECTION  */
+  
+  .shortcuts {
     grid-area: shortcuts;
-    background-color: #00ffff40; 
-}
-
-@media screen and (max-width: 740px) {
-    body {
-        grid-template:
-        'header header header header'auto
-        'left-menu emails settings shortcuts' 1fr /
-        180px 1fr 180px auto;
-    }
-
-    .shortcuts {
-        display: none;
-    }  
-}
-
-@media screen and (max-width: 670px) {
-    body {
-        grid-template:
-        'header header' auto
-        'left-menu emails' 1fr 
-        'left-menu settings' 200px /
-        180px 1fr;
-    }
-}
-
-@media screen and (max-width: 670px) {
-    body {
-        grid-template:
-        'header header' auto
-        'left-menu emails' 1fr 
-        'left-menu settings' 200px /
-        50px 1fr;
-    }
-}
+    background-color: #ffff0040;
+  }
