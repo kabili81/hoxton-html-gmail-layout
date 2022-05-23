@@ -22,6 +22,7 @@
     grid-template-columns: auto 1fr auto;
     gap: 3rem;
     padding: 0.5rem 1rem;
+    border-bottom: 1px solid whitesmoke;
   }
   
   button {
@@ -41,6 +42,9 @@
     grid-auto-flow: column;
     gap: 0.5rem;
     align-items: center;
+  }
+  .gmail-logo {
+      width: 60px;
   }
   
   /* HEADER SECTION -- SEARCH */
@@ -122,30 +126,139 @@
   
   .left-menu {
     grid-area: left-menu;
-    background-color: #00ff0040;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: 100px 240px 100px 1fr;
   }
+  .first-row p{
+    padding-right: 20px;
+}
+.buttons{
+    padding-left: 20px;
+    display: grid;
+    border-bottom: 1px solid #cecaca;
+    gap: 5px; 
+}
+.buttons-all{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr 30px;
+}
+.second-row{
+   margin-top: 10px;
+   padding-left: 20px;
+   padding-bottom: 100px;
+   display: grid;
+   gap: 10px;
+   border-bottom: 1px solid #cecaca; 
+}
+.buttons-all-1{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+}
   
-  .gmail-logo {
-    width: 60px;
-  }
+
+
+
+  
   
   /* EMAILS SECTION  */
   
   .emails {
     grid-area: emails;
+    padding: 1rem;
     background-color: #ff00ff40;
+    overflow: scroll;
+    display: grid;
+    grid-gap: 4px;
   }
+
+  .emails p{
+      border: 2px solid #ff00ff40;
+      box-shadow: 2px 2px 2px 2px rgb(179, 176, 176);
+      padding: 5px;
+  }
+
+
   
   /* SETTINGS SECTION  */
   
   .settings {
     grid-area: settings;
+    border: 1px solid whitesmoke;
     background-color: #0000ff40;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 30px 50px 50px;
+    gap: 15px;
   }
   
+  .line-1 {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 30px;
+      place-content: center;
+      font-size: 17px;
+  }
+
+  .line-2 {
+    padding-top: 10px;
+    padding-left: 30px;
+    border: 1px solid #d4d4d491;
+    box-shadow: 1px 1px 1px #d4d4d491;
+    color: rgb(5, 80, 192);
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .density{
+      margin-top: 15px;
+      font-size: 13px;
+  }
+
+  .density-icons{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 40px 40px;
+  }
+
+  .density-buttones{
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 50px auto;
+  }
+
+
+
   /* SHORTCUTS SECTION  */
   
   .shortcuts {
     grid-area: shortcuts;
     background-color: #ffff0040;
   }
+
+  .first-row {
+      margin-right: 90px;
+      margin-bottom: 35px;
+      margin-top: 15px;
+      margin-left: 5px;
+      border: 0px solid #fafafb;
+      border-radius: 35px;
+      box-shadow: 1px 2px 4px gray;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 50px 1fr;
+      place-items: center;
+      font-size: 15px;
+  }
+
+.shortcuts-button {
+    margin: 5px;
+    display: grid;
+}
+
+.add-button {
+    margin: 13px;
+}
